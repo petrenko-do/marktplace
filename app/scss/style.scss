@@ -2,6 +2,7 @@
 @import 'global';
 @import 'fonts';
 
+// header start ==========================================================================================
 .header__top {
   background-color: $bgheader;
 }
@@ -60,6 +61,7 @@
 .header__search {
   form{
     max-width: 360px;
+    width: 100%;
     position: relative;
   }
   input {
@@ -92,6 +94,9 @@
     }
   }
 }
+// header end ==========================================================================================
+
+// search start ==========================================================================================
 .search {
   position: relative;
   &__info {
@@ -146,6 +151,7 @@
       position: absolute;
       bottom: -9%;
       height: 135px;
+      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
       background-color: #fff;
       display: flex;
       align-items: center;
@@ -174,6 +180,7 @@
       a {
       color: #676767;
       border: 1px solid #dcdcdc;
+      border-left: none;
       border-radius: 3px;
       height: 55px;
       width: 195px;
@@ -183,47 +190,6 @@
       margin-left: 30px;
     }
   }
-
-
-
-// .search__form {
-//   position: absolute;
-//   bottom: -9%;
-//   height: 135px;
-//   background-color: #fff;
-//   display: flex;
-//   align-items: center;
-//   color: #676767;
-//   border-radius: 6px;
-//   padding: 40px;
-//   z-index: 10;
-//   width: 100%;
-//   max-width: 1140px;
-// }
-// .search__form-product {
-//   max-width: 615px;
-//   width: 100%;
-//   border: none;
-//   border: 1px solid #dcdcdc;
-//   border-radius: 3px;
-//   input {
-//     border: none;
-//     width: 100%;
-//     height: 53px;
-//     color: #676767;
-//     padding-left: 30px;
-//   }
-// }
-// .search__form-categories a {
-//   color: #676767;
-//   border: 1px solid #dcdcdc;
-//   border-radius: 3px;
-//   height: 55px;
-//   width: 195px;
-// }
-// .search__form-btn {
-//   margin-left: 30px;
-// }
 .form-btn {
   font-size: 16px;
   padding: 7px 60px;
@@ -253,9 +219,47 @@
   width: 1110px;
   z-index: 8;
 }
+// search end ==========================================================================================
 
-
-
+// features start ==========================================================================================
+.features__items {
+  height: 710px;
+  padding: 185px 0 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.features__item {
+  max-width: 360px;
+  height: 405px;
+  text-align: center;
+  margin: 0 auto;
+  
+  transition: all .3s;
+  &-img {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &-title {
+    padding: 35px 0 30px;
+    font-size: 24px;
+    color: #000;
+  }
+  &-text {
+    width: 300px;
+    margin: 0 auto;
+    color: $text;
+    line-height: 30px;
+  }
+  &:hover {
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+  }
+}
+// features==========================================================================================
 
 
 
