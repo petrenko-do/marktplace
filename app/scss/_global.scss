@@ -9,9 +9,13 @@ html {
 a {
   display: inline-block;
   text-decoration: none;
+  color: #ababab;
 }
 button {
   cursor: pointer;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 ul,
 li {
@@ -30,4 +34,22 @@ body{
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.title {
+  font-size: 30px;
+  color: $title;
+  padding: 0px 30px;
+  background-color:#fff;
+}
+.tags {
+  color: #868c96;
+  background-color: #f1f3f6;
+  padding: 7px 14px;
+  border-radius: 28px;
+}
+button {
+  
+
+  cursor: pointer;
+  border: none;
 }
