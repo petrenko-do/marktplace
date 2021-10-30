@@ -331,11 +331,13 @@
 }
 .product__items {
   display: flex !important;
+  margin-top: 50px;
 }
 .product__item,
 .release__item {
   &-box {
     position: relative;
+    max-height: 450px;
   }
   &-content{
     padding: 50px 50px 20px 50px;
@@ -423,7 +425,7 @@
     width: 16px;
     height: 14px;
     left: -22px;
-    top: 4px;
+    top: 5px;
   }
   &-basket {
     margin-left: 40px;
