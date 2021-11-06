@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MartPlace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <!-- start header -->
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <div class="header__logo">
+                <a href="#"><img src="images/header/header-logo.png" alt=""></a>
+              </div>
+              <div class="header__box">
+                <div class="header__btn">
+                  <a href="#">Become a Seller</a>
+                </div>
+                <div class="user__logo">
+                  <a href="#"><img src="images/header/user-logo.png" alt=""></a>
+                </div>
+                <div class="user__info">
+                  <div class="user__name"><a href="#">Taofiq Hakim</a></div>
+                  <span><a class="user__cash" href="#">$20.45</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__menu">
+          <div class="container">
+            <div class="menu">
+              <nav class="menu__list">
+                <ul>
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#">all products</a></li>
+                  <li><a href="#">wordpress</a></li>
+                  <li><a href="#">festures</a></li>
+                  <li><a href="#">Pages</a></li>
+                </ul>
+              </nav>
+              <div class="header__search">
+                <form>
+                  <input type="text" placeholder="Search product here..." required>
+                  <button type="submit">
+                    <img src="images/icons/search.svg" alt="">
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <!-- start search -->
+      <section class="search category__search">
+        <div class="search__info">
+          <div class="container">
+            <div class="search__inner">
+              <div class="search__text"><span>4,572</span> wordpress themes, made with love</div>
+            </div>
+            <div class="search__inner-form">
+              <form>
+                <input type="text" placeholder="Search product here..." required>
+              </form>
+              <button type="submit">Search</button>
+            </div>
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li><a href="#">Home</a></li>
+                <li><span href="#">Category Page Grid</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end search -->
+      <!-- start filter-bar -->
+      <section class="filter-bar">
+        <div class="container">
+          <div class="filter__products">
+            <div class="filter__products-items">
+              <a class="filter__products-item active" href="#">New Products</a>
+              <a class="filter__products-item" href="#">Popular Products</a>
+            </div>
+            <div class="filter__price ">
+              <button class="icon-bolt"></button><span>Price</span> : Low to High
+            </div>
+            <div class="filter__volume"><button class="icon-bolt"></button>
+              12 Items Per Page</div>
+            <div class="filter__items-btn">
+              <button class="icon-th-large active"></button>
+              <button class="icon-list"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end filter-bar -->
+      <!-- end product-page -->
+      <section class="product-page">
+        <div class="container">
+          <div class="product-page__inner">
+            <div class="product-page__aside">
+              <div class="category aside__item">
+                <div class="aside__title">Categories</div>
+                <ul class="category__list">
+                  <li><a href="#">Wordpress</a><span>35</span></li>
+                  <li><a href="#">Landing Page</a><span>35</span></li>
+                  <li><a href="#">Psd Template</a><span>35</span></li>
+                  <li><a href="#">Plugins</a><span>35</span></li>
+                  <li><a href="#">HTML Template</a><span>35</span></li>
+                  <li><a href="#">Components</a><span>35</span></li>
+                  <li><a href="#">Joomla Template</a><span>35</span></li>
+                </ul>
+              </div>
+              <div class="category aside__item">
+                <div class="aside__title">Filter Products</div>
+                <ul class="category__list">
+                  <li><a href="#">Popular Products</a><span>35</span></li>
+                  <li><a href="#">New Products</a><span>35</span></li>
+                  <li><a href="#">Psd Template</a><span>35</span></li>
+                  <li><a href="#">Best Seller</a><span>35</span></li>
+                  <li><a href="#">HTML Template</a><span>35</span></li>
+                  <li><a href="#">Low Price</a><span>35</span></li>
+                  <li><a href="#">High Price</a><span>35</span></li>
+                </ul>
+              </div>
+              <div class="price-range aside__range">
+                <div class="aside__title">Pricing Range</div>
+                <form>
+                  <input type="text" class="js-range-slider" name="my_range" value="" />
+                  <button type="button">Search Update</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="product-page__content">
+              <div class="product-page__items">
+                <div class="release__item">
+                  <a href="#" class="release__item-img"
+                    style="background-image: url(images/content/product-item.jpg);"></a>
+                  <div class="releas__item-contente">
+                    <a class="release__item-name" href="#">Finance and Consulting
+                      Business Theme</a>
+                    <div class="release__item-info">
+                      <div class="release__item-author" href="#">
+                        <div class="avatar" style="background-image: url(images/content/avatar.jpg);"></div>Theme-Valley
+                      </div>
+                    </div>
+                    <div class="release__item-block">
+                      <div class="release__item-star">
+                        <div class="rate-star"></div>
+                      </div>
+                      <div class="release__item-basket">246</div>
+                    </div>
+                  </div>
+                  <div class="release__item-data">
+                    <div class="release__item-price">$20</div>
+                    <div class="release__item-category">
+                      <div class="icon-category" style="background-image: url(images/icons/icon-category.png);"></div>
+                      WordPress
+                    </div>
+                  </div>
+                </div>
+                <div class="release__item">
+                  <a href="#" class="release__item-img"
+                    style="background-image: url(images/content/product-item.jpg);"></a>
+                  <div class="releas__item-contente">
+                    <a class="release__item-name" href="#">Finance and Consulting
+                      Business Theme</a>
+                    <div class="release__item-info">
+                      <div class="release__item-author" href="#">
+                        <div class="avatar" style="background-image: url(images/content/avatar.jpg);"></div>Theme-Valley
+                      </div>
+                    </div>
+                    <div class="release__item-block">
+                      <div class="release__item-star">
+                        <div class="rate-star"></div>
+                      </div>
+                      <div class="release__item-basket">246</div>
+                    </div>
+                  </div>
+                  <div class="release__item-data">
+                    <div class="release__item-price">$20</div>
+                    <div class="release__item-category">
+                      <div class="icon-category" style="background-image: url(images/icons/icon-category.png);"></div>
+                      WordPress
+                    </div>
+                  </div>
+                </div>
+                <div class="release__item">
+                  <a href="#" class="release__item-img"
+                    style="background-image: url(images/content/product-item.jpg);"></a>
+                  <div class="releas__item-contente">
+                    <a class="release__item-name" href="#">Finance and Consulting
+                      Business Theme</a>
+                    <div class="release__item-info">
+                      <div class="release__item-author" href="#">
+                        <div class="avatar" style="background-image: url(images/content/avatar.jpg);"></div>Theme-Valley
+                      </div>
+                    </div>
+                    <div class="release__item-block">
+                      <div class="release__item-star">
+                        <div class="rate-star"></div>
+                      </div>
+                      <div class="release__item-basket">246</div>
+                    </div>
+                  </div>
+                  <div class="release__item-data">
+                    <div class="release__item-price">$20</div>
+                    <div class="release__item-category">
+                      <div class="icon-category" style="background-image: url(images/icons/icon-category.png);"></div>
+                      WordPress
+                    </div>
+                  </div>
+                </div>
+                <div class="release__item">
+                  <a href="#" class="release__item-img"
+                    style="background-image: url(images/content/product-item.jpg);"></a>
+                  <div class="releas__item-contente">
+                    <a class="release__item-name" href="#">Finance and Consulting
+                      Business Theme</a>
+                    <div class="release__item-info">
+                      <div class="release__item-author" href="#">
+                        <div class="avatar" style="background-image: url(images/content/avatar.jpg);"></div>Theme-Valley
+                      </div>
+                    </div>
+                    <div class="release__item-block">
+                      <div class="release__item-star">
+                        <div class="rate-star"></div>
+                      </div>
+                      <div class="release__item-basket">246</div>
+                    </div>
+                  </div>
+                  <div class="release__item-data">
+                    <div class="release__item-price">$20</div>
+                    <div class="release__item-category">
+                      <div class="icon-category" style="background-image: url(images/icons/icon-category.png);"></div>
+                      WordPress
+                    </div>
+                  </div>
+                </div>
+                <div class="release__item">
+                  <a href="#" class="release__item-img"
+                    style="background-image: url(images/content/product-item.jpg);"></a>
+                  <div class="releas__item-contente">
+                    <a class="release__item-name" href="#">Finance and Consulting
+                      Business Theme</a>
+                    <div class="release__item-info">
+                      <div class="release__item-author" href="#">
+                        <div class="avatar" style="background-image: url(images/content/avatar.jpg);"></div>Theme-Valley
+                      </div>
+                    </div>
+                    <div class="release__item-block">
+                      <div class="release__item-star">
+                        <div class="rate-star"></div>
+                      </div>
+                      <div class="release__item-basket">246</div>
+                    </div>
+                  </div>
+                  <div class="release__item-data">
+                    <div class="release__item-price">$20</div>
+                    <div class="release__item-category">
+                      <div class="icon-category" style="background-image: url(images/icons/icon-category.png);"></div>
+                      WordPress
+                    </div>
+                  </div>
+                </div>
+                <div class="release__item">
+                  <a href="#" class="release__item-img"
+                    style="background-image: url(images/content/product-item.jpg);"></a>
+                  <div class="releas__item-contente">
+                    <a class="release__item-name" href="#">Finance and Consulting
+                      Business Theme</a>
+                    <div class="release__item-info">
+                      <div class="release__item-author" href="#">
+                        <div class="avatar" style="background-image: url(images/content/avatar.jpg);"></div>Theme-Valley
+                      </div>
+                    </div>
+                    <div class="release__item-block">
+                      <div class="release__item-star">
+                        <div class="rate-star"></div>
+                      </div>
+                      <div class="release__item-basket">246</div>
+                    </div>
+                  </div>
+                  <div class="release__item-data">
+                    <div class="release__item-price">$20</div>
+                    <div class="release__item-category">
+                      <div class="icon-category" style="background-image: url(images/icons/icon-category.png);"></div>
+                      WordPress
+                    </div>
+                  </div>
+                </div>
+                <div class="release__item">
+                  <a href="#" class="release__item-img"
+                    style="background-image: url(images/content/product-item.jpg);"></a>
+                  <div class="releas__item-contente">
+                    <a class="release__item-name" href="#">Finance and Consulting
+                      Business Theme</a>
+                    <div class="release__item-info">
+                      <div class="release__item-author" href="#">
+                        <div class="avatar" style="background-image: url(images/content/avatar.jpg);"></div>Theme-Valley
+                      </div>
+                    </div>
+                    <div class="release__item-block">
+                      <div class="release__item-star">
+                        <div class="rate-star"></div>
+                      </div>
+                      <div class="release__item-basket">246</div>
+                    </div>
+                  </div>
+                  <div class="release__item-data">
+                    <div class="release__item-price">$20</div>
+                    <div class="release__item-category">
+                      <div class="icon-category" style="background-image: url(images/icons/icon-category.png);"></div>
+                      WordPress
+                    </div>
+                  </div>
+                </div>
+                <div class="release__item">
+                  <a href="#" class="release__item-img"
+                    style="background-image: url(images/content/product-item.jpg);"></a>
+                  <div class="releas__item-contente">
+                    <a class="release__item-name" href="#">Finance and Consulting
+                      Business Theme</a>
+                    <div class="release__item-info">
+                      <div class="release__item-author" href="#">
+                        <div class="avatar" style="background-image: url(images/content/avatar.jpg);"></div>Theme-Valley
+                      </div>
+                    </div>
+                    <div class="release__item-block">
+                      <div class="release__item-star">
+                        <div class="rate-star"></div>
+                      </div>
+                      <div class="release__item-basket">246</div>
+                    </div>
+                  </div>
+                  <div class="release__item-data">
+                    <div class="release__item-price">$20</div>
+                    <div class="release__item-category">
+                      <div class="icon-category" style="background-image: url(images/icons/icon-category.png);"></div>
+                      WordPress
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination">
+                <ul class="pagination__list">
+                  <li><a class="icon-long-arrow-left" href="#"></a></li>
+                  <li><span class="active" href="#">1</span></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">...</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a class="icon-long-arrow-right" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end product-page -->
+
+
+
+
+
+
+
+
+
+      <!-- start footer -->
+    </div>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="container">
+          <div class="footer__items">
+            <div class="footer__item footer__item-direction">
+              <div class="footer__item-title footer__item-logo">
+                Mart<span>Place</span>
+              </div>
+              <div class="footer__item-text">Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut
+                scel
+                erisque the mattis, leo quam.</div>
+              <div class="footer__item-contact">
+                <ul>
+                  <li><a class="footer__item-tel" href="tel:67898752235">Phone: +6789-875-2235</a></li>
+                  <li><a class="footer__item-email" href="mailto:support@aazztech.com">support@aazztech.com</a></li>
+                  <p class="footer__item-adres">202 New Hampshire Avenue
+                    Northwest #100, New York-2573</p>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__item footer__item-list">
+              <div class="footer__item-title">Our Company</div>
+              <ul class="footer__list">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">How It Work</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Copyright Notice</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="footer__item footer__item-list">
+              <div class="footer__item-title">Help Support</div>
+              <ul class="footer__list">
+                <li><a href="#">Support Forum</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Support Policy</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Buyers Faq</a></li>
+                <li><a href="#">Sellers Faq</a></li>
+              </ul>
+            </div>
+            <div class="footer__item footer__item-social">
+              <div class="footer__item-title">Newsletter</div>
+              <div class="footer__item-text">Subscribe to get the latest news, update and offer information. Don't
+                worry,
+                we
+                won't send spam!</div>
+              <div class="footer__search">
+                <form>
+                  <input type="text" placeholder="Enter email" required>
+                  <button type="submit">Submit
+                  </button>
+                </form>
+              </div>
+              <ul class="footer__social">
+                <li><a href="#"><img src="images/icons/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="images/icons/ball.png" alt=""></a></a></li>
+                <li><a href="#"><img src="images/icons/google.png" alt=""></a></a></li>
+                <li><a href="#"><img src="images/icons/facebook.png" alt=""></a></a></li>
+                <li><a href="#"><img src="images/icons/facebook.png" alt=""></a></a></li>
+                <li><a href="#"><img src="images/icons/ball.png" alt=""></a></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copy">
+        ©2017 <a href="">MartPlace</a> . All rights reserved. Created by
+        <a href="#">AazzTech</a>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+    integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/path/to/mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/slick.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -3,3 +3,12 @@ $text: #555555;
 $title: #000;
 $search: #0674ec;
 $border: #d9dfe5;
+
+@mixin f500 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+@mixin f400 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}

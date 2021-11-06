@@ -6,6 +6,10 @@ html {
 *::before {
   box-sizing: inherit;
 }
+html,
+body {
+	height: 100%;
+}
 a {
   display: inline-block;
   text-decoration: none;
@@ -24,11 +28,21 @@ li {
   list-style: none;
 }
 body{
-  font-family: 'Quicksand-Regular', sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
   margin: 0;
+  @include f400;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
 }
 .container {
   max-width: 1170px;
@@ -48,8 +62,6 @@ body{
   border-radius: 28px;
 }
 button {
-  
-
   cursor: pointer;
   border: none;
 }
