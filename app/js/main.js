@@ -32,18 +32,26 @@ $(function () {
     from: 30,
     to: 300,
     prefix: "$"
+  });
+
+$('.icon-th-large').on('click', function(){
+  $('.release__item').removeClass('list');
+  $('.icon-th-large').addClass('active');
+  $('.icon-list').removeClass('active');
 });
 
-
-
+$('.icon-list').on('click', function(){
+  $('.release__item').addClass('list');
+  $('.icon-list').addClass('active');
+  $('.icon-th-large').removeClass('active');
+});
 
 
 
 })
 
+mixer = mixitup('.release__items');
 
 
 
-
-var mixer = mixitup('.release__items');
 
