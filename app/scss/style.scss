@@ -1606,17 +1606,7 @@
 .price {
   @include f400;
   &__title {
-    text-align: center;
     font-size: 36px;
-   
-  }
-  &__text {
-    margin: 0 auto;
-    text-align: center;
-    color: $text;
-    line-height: 30px;
-    max-width: 690px;
-    margin-top: 30px;
   }
 }
 .price__items {
@@ -1711,6 +1701,55 @@
   }
 }
 //==================END PRICE=================================
+//==================START RECOVER PASSWORD=================================
+.recover {
+  padding-top: 70px;
+  padding-bottom: 120px;
+}
+.recover__box {
+  margin: 0 auto;
+  max-width: 555px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+.recover__text {
+  border-bottom: 1px solid #eff1f5;
+  padding: 55px 45px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  line-height: 30px;
+  color: $text;
+  }
+.recover__form {
+  padding: 0 45px 55px;
+}
+.recover__title {
+  line-height: 26px;
+  @include f500;
+  margin-bottom: 15px;
+}
+.recover__form input {
+  max-width: 455px;
+  width: 100%;
+  background-color: #eff1f5;
+  border: none;
+  padding: 10px 20px;
+  color: #898f96;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.recover__form button {
+  font-size: 15px;
+  color: #fff;
+  line-height: 32px;
+  background-color: $search;
+  width: 190px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+//==================END RECOVER PASSWORD=================================
 
 
 

@@ -51,12 +51,21 @@ body{
 }
 .title {
   font-size: 30px;
+  text-align: center;
   color: $title;
   padding: 0px 30px;
   background-color: transparent;
   span {
     color: #0674ec;
   }
+}
+.text {
+  margin: 0 auto;
+  text-align: center;
+  color: $text;
+  line-height: 30px;
+  max-width: 690px;
+  margin-top: 30px;
 }
 .tags {
   color: #868c96;
