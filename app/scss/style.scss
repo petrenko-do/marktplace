@@ -1880,7 +1880,35 @@
   margin-top: 30px;
   margin-bottom: 60px;
 }
-
+//==================END CONTACT=================================
+//==================END TERMS=================================
+.terms {
+  background-color: #eff1f5;;
+}
+.terms__items {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+.terms__item {
+  background-color: #fff;
+}
+.terms__title {
+  padding: 40px 30px 30px;
+  font-size: 24px;
+  line-height: 32px;
+  border-bottom: 1px solid #eff1f5;
+  margin-bottom: 25px;
+  @include f500;
+}
+.terms__text {
+  font-size: 16px;
+  line-height: 30px;
+  color: $text;
+  padding: 0 30px;
+  &-last {
+    padding-bottom: 90px;
+  }
+}
 //==================END CONTACT=================================
 
 
