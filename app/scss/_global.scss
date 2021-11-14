@@ -53,7 +53,10 @@ body{
   font-size: 30px;
   color: $title;
   padding: 0px 30px;
-  background-color:#fff;
+  background-color: transparent;
+  span {
+    color: #0674ec;
+  }
 }
 .tags {
   color: #868c96;

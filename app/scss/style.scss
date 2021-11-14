@@ -277,7 +277,8 @@
 
 .featured-product,
 .followers-feed,
-.news {
+.news,
+.price {
   padding: 120px 0;
   background-color: #eff1f5;
 }
@@ -1601,3 +1602,117 @@
   }
 }
 //==================END FAVORITES=================================
+//==================START PRICE=================================
+.price {
+  @include f400;
+  &__title {
+    text-align: center;
+    font-size: 36px;
+   
+  }
+  &__text {
+    margin: 0 auto;
+    text-align: center;
+    color: $text;
+    line-height: 30px;
+    max-width: 690px;
+    margin-top: 30px;
+  }
+}
+.price__items {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+.price__item {
+  width: 100%;
+  max-width: 360px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  border-top: 3px solid #ff6a6c;
+  padding: 30px;
+  color: $text;
+  span {
+    @include f500;
+  }
+  &-title {
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e8ebf0;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #000;
+    @include f500;
+  }
+  &-cena {
+    padding-bottom: 30px;
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+    position: relative;
+    sup {
+      font-size: 18px;
+    }
+    span {
+      font-size: 16px;
+      line-height: 32px;
+      color: $text;
+    }
+   }
+}
+.price__item-list {
+  padding-left: 25px;
+  ::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #c5cad4;
+    left: -25px;
+    top: 15px;
+  }
+  li {
+    line-height: 36px;
+    position: relative;
+    span {
+      color: #000;
+    }
+  }
+}
+.price__btn {
+  padding: 20px;
+  color: #fff;
+  background-color: #ff6a6c;
+  border-radius: 4px;
+  font-size: 18px;
+  @include f500;
+  margin-top: 40px;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+.icon-lightbulb-o {
+  font-size: 18px;
+  padding-left: 10px;
+}
+.box-one {
+  border-top: 3px solid $search;
+  .price__btn {
+    background-color: $search;
+  }
+}
+.box-two {
+  border-top: 3px solid #feb71d;
+  .price__btn {
+    background-color: #feb71d;
+  }
+}
+//==================END PRICE=================================
+
+
+
+
+
