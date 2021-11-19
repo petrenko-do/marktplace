@@ -99,10 +99,8 @@
 // search start ==========================================================================================
 .search {
   position: relative;
-  // height: 725px;
   &__info {
     background-image: -moz-linear-gradient( 180deg, rgb(0,48,222) 0%, rgb(23,69,237) 54%, rgb(46,90,251) 100%);
-    // height: 725px;
   }
   &__inner {
     padding-top: 150px;
@@ -280,7 +278,9 @@
 .news,
 .price,
 .recover,
-.contact {
+.contact,
+.login,
+.register {
   padding: 120px 0;
   background-color: #eff1f5;
 }
@@ -375,7 +375,6 @@
     display: flex;
     align-items: center;
     font-size: 15px;
-    // margin-top: 20px;
   }
   &-price {
     text-align: center;
@@ -1114,11 +1113,6 @@
 }
 //==================START CATEGORY-PAGE=================================
 .category__search {
-  // max-height: 280px;
-  .search__info {
-    // max-height: 280px;
-    // padding: 80px 0 30px;
-  }
   .search__inner {
     padding-top: 80px;
     padding-bottom: 0;
@@ -1160,7 +1154,6 @@
   }
 }
 .breadcrumbs {
-  // margin: 35px 0 30px;
   padding: 35px 0 30px;
   text-align: center;
   .breadcrumbs__list li {
@@ -1409,9 +1402,6 @@
     font-size: 18px;
     @include f500;
   }
-  .release__item-text {
-    display: none;
-  }
   .releas__item-contente {
     padding: 20px 20px 15px 20px;
   }
@@ -1423,6 +1413,7 @@
   .release__item-star-list,
   .news__item-comments,
   .release__item-like,
+  .release__item-text,
   .product__item-price {
     display: none;
   }
@@ -1501,7 +1492,7 @@
 .icon-long-arrow-right {
   margin-left: 20px;
 }
-.release__item{
+.release__item {
   &.list {
     min-width: 100%;
     .release__item-img {
@@ -1598,8 +1589,8 @@
   .release__item {
     max-width: 360px;
   }
-  .release__item-text,
-  .release__item-like {
+  .favorites-text,
+  .favorites-like {
     display: block;
   }
 }
@@ -1761,7 +1752,9 @@
   line-height: 80px;
   @include f500;
 }
-.pageError__btn {
+.pageError__btn,
+.login__btn,
+.register__btn {
   font-size: 15px;
   color: #fff;
   line-height: 32px;
@@ -1881,7 +1874,7 @@
   margin-bottom: 60px;
 }
 //==================END CONTACT=================================
-//==================END TERMS=================================
+//==================START TERMS=================================
 .terms {
   background-color: #eff1f5;;
 }
@@ -1909,7 +1902,94 @@
     padding-bottom: 90px;
   }
 }
-//==================END CONTACT=================================
+//==================END TERMS=================================
+//==================END LOGIN=================================
+.login__inner,
+.register__inner {
+  max-width: 560px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+.login__top,
+.register__top {
+  text-align: center;
+  padding-top: 52px;
+  line-height: 28px;
+  padding-bottom: 30px;
+  margin-bottom: 9px;
+  border-bottom: 1px solid #eff1f5;
+  &-title {
+    font-size: 26px;
+    padding-bottom: 10px;
+    color: #000;
+  }
+  &-text {
+    color: $text;
+    font-size: 16px;
+  }
+}
+.register__top-text {
+  max-width: 430px;
+  margin: 0 auto;
+}
+.login__box,
+.register__box {
+  padding: 0 50px 55px;
+  input {
+    line-height: 30px;
+    color: #898f96;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    background-color: #eff1f5;
+  }
+  label {
+   color: $text;
+   font-size: 16px;
+    input {
+      margin-top: 30px;
+      width: auto;
+    }
+  }
+  .check-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
+  .login__btn,
+  .register__btn {
+    display: block;
+  }
+}
+.login__form-title,
+.register__form-title {
+  @include f500;
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+.login__btn,
+.register__btn {
+  text-align: center;
+  margin-top: 30px;
+}
+.login__bottom,
+.register__bottom {
+  color: #898f96;
+  display: flex;
+  padding-top: 33px;
+  a {
+    color: $search;
+  }
+  .make-account {
+    margin-left: 30px;
+  }
+}
+//==================END LOGIN=================================
+//==================END REGISTER=================================
+
+//==================END REGISTER=================================
 
 
 
