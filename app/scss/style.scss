@@ -957,7 +957,6 @@
   border-right: 1px solid #eef0f4;
 }
 .banner {
-  
   padding: 110px 0;
   background: -moz-linear-gradient(180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
   text-align: center;
@@ -1569,6 +1568,29 @@
     }
   }
 }
+.join {
+  background-image: -moz-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+}
+.join__box {
+  text-align: center;
+  padding: 110px 0;
+  &-title {
+    font-size: 36px;
+    color: #fff;
+  }
+  &-text {
+    font-size: 18px;
+    color: #e7e7e7;
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+  .join__btn {
+    color: $search;
+    background-color: #fff;
+    font-size: 16px;
+  }
+}
+
 //==================END CATEGORY-PAGE=================================
 //==================START FAVORITES=================================
 .favorite__search {
@@ -1586,7 +1608,7 @@
   }
 }
 .product-page__items {
-  .release__item {
+  .favorite__item {
     max-width: 360px;
   }
   .favorites-text,
@@ -1754,7 +1776,8 @@
 }
 .pageError__btn,
 .login__btn,
-.register__btn {
+.register__btn,
+.join__btn {
   font-size: 15px;
   color: #fff;
   line-height: 32px;
@@ -1767,7 +1790,7 @@
 }
 //==================END pageError=================================
 //==================START CONTACT=================================
-.contact__slider {
+.contact__slider{
   padding: 100px 0;
   .contact__slider-title {
     color: #fff;
@@ -1861,17 +1884,29 @@
     font-size: 16px;
   }
 }
-.contact__form-box button {
+.contact__form-box button,
+.how-it-work__btn {
   font-size: 16px;
   color: #fff;
   line-height: 28px;
   background-color: $search;
-  padding: 9px;
+  padding: 11px;
   width: 170px;
   height: 50px;
   border-radius: 30px;
   margin-top: 30px;
   margin-bottom: 60px;
+}
+.contact__map {
+  background-color: #e3e6ec;
+  &-item {
+    text-align: center;
+    iframe {
+      height: 400px;
+      width: 100%;
+  }
+  }
+  
 }
 //==================END CONTACT=================================
 //==================START TERMS=================================
@@ -1987,9 +2022,76 @@
   }
 }
 //==================END LOGIN=================================
-//==================END REGISTER=================================
+//==================END how-works=================================
+.how-works__slider {
+  margin: 0 auto;
+  max-width: 420px;
+  padding: 85px 0 25px;
+  &-title {
+    color: #fff;
+    line-height: 50px;
+    padding: 0;
+    @include f500;
+  }
+  span {
+    color: #fff;
+    @include f400
+  }
+}
+.how-it-work__item {
+  display: flex;
+  padding: 95px 0;
+}
+.how-it-work__content {
+  max-width: 457px;
+  margin-left: 225px;
+  &-item {
+    margin-left: 0;
+    margin-right: 225px;
+  }
+}
+.how-it-work__title {
+  font-size: 30px;
+  line-height: 46px;
+  margin: 25px 0;
+  color: #000;
+}
+.how-it-work__text {
+  line-height: 30px;
+  color: $text;
+}
+.how-it-work__btn {
+  text-align: center;
+  background-color: #fff;
+  color: $search;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+  transition: all .3s;
+}
+.how-it-work__btn:hover {
+  background-color: $search;
+  color: #fff;
+}
+//==================END how-works=================================
 
-//==================END REGISTER=================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
