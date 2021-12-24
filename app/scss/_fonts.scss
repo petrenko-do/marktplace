@@ -196,3 +196,61 @@
 .icon-list:before {
   content: "\e9ba";
 }
+.icon-check:before {
+  content: "\f00c";
+}
+
+
+
+
+
+@font-face {
+	font-family: 'Linearicons-Free';
+	src:url('../fonts/Linearicons-Free.eot?w118d');
+	src:url('../fonts/Linearicons-Free.eot?#iefixw118d') format('embedded-opentype'),
+		url('../fonts/Linearicons-Free.woff2?w118d') format('woff2'),
+		url('../fonts/Linearicons-Free.woff?w118d') format('woff'),
+		url('../fonts/Linearicons-Free.ttf?w118d') format('truetype'),
+		url('../fonts/Linearicons-Free.svg?w118d#Linearicons-Free') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.lnr {
+	font-family: 'Linearicons-Free';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.lnr-eye:before {
+	content: "\e81b";
+}
+.lnr-user:before {
+	content: "\e82a";
+}
+.lnr-bubble:before {
+	content: "\e83f";
+}
+.lnr-clock:before {
+	content: "\e864";
+}
+.lnr-magnifier:before {
+	content: "\e86f";
+}
+.lnr-heart:before {
+	content: "\e813";
+}
+.lnr-link:before {
+	content: "\e86b";
+}
+.lnr-cart:before {
+	content: "\e82e";
+}

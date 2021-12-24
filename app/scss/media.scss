@@ -1,0 +1,139 @@
+@media (max-width: 1070px) {
+  .footer__items {
+    flex-wrap: wrap;
+  }
+  .footer__item-social {
+    min-width: 100%;
+    margin-top: 30px;
+    .footer__item-title {
+      margin-bottom: 15px;
+    }
+    form {
+      position: relative;
+    }
+    button {
+      position: absolute;
+      left: 250px;
+    }
+  }
+}
+@media (max-width: 1020px) {
+  .k-box {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .menu__list {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    z-index: 1;
+    right: 0;
+    background-color:$bg;
+    ul {
+      display: block;
+      text-align: center;
+      &:first-child {
+        border-top: 1px solid $search;
+      }
+    }
+    li {
+      margin-right: 0;
+      border-bottom: 1px solid $search;
+    }
+  }
+  .menu__btn {
+    display: block;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 780px) {
+  .header__btn {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .header__btn {
+    display: none;
+  }
+  .footer__item-direction {
+    min-width: 100%;
+    margin-bottom: 40px;
+    .footer__item-adres::after {
+      top: 3px;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+   .header__logo {
+      display: none;
+    }
+    .header__logo-media {
+      display: block;
+    }
+}
+@media (max-width: 520px) {
+  .footer__item-list,
+  .footer__item-direction {
+    min-width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ababab;
+  }
+  .footer__item-direction {
+    padding-bottom: 30px;
+    .footer__item-adres::after {
+      top: 13px;
+    }
+  }
+  .footer__item-social {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 490px) {
+  .menu {
+    display: block;
+    height: 135px;
+  }
+  .header__search,
+  .menu__btn {
+    margin-top: 20px;
+  }
+  .menu__list {
+    top: 135px;
+  }
+}
+@media (max-width: 450px) {
+  .message__box,
+  .notification__box,
+  .basket__box {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer__social {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__item-social button {
+    left: 160px;
+  }
+  .footer__search input {
+    width: 200px;
+    border-radius: 30px 0px 0 30px;
+    padding: 0 45px 0 30px;
+  }
+}
+
+
+
+
+
+
+
